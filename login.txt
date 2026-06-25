@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Signup</title>
+
+<style>
+body 
+    font-family: Arial;
+    background: #0f2027;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+    <!-- LOGIN -->
+    <div id="loginBox">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <span class="link" onclick="showSignup()">Create Account</span>
+    </div>
+
+    <!-- SIGNUP -->
+    <div id="signupBox" style="display:none;">
+        <h2>Signup</h2>
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button onclick="signup()">Signup</button>
+        <span class="link" onclick="showLogin()">Back to Login</span>
+    </div>
+
+</div>
+
+<!-- JS LINK (IMPORTANT) -->
+<script src="script.js"></script>
+
+</body>
+</html>
